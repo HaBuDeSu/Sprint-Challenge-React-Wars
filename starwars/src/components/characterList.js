@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './StarWars.css';
 
-const characterList = () => {
-  <div>
-  </div>
+function CharacterList() {
+  return (
+    <div>
+    </div>
+  )
 }
 
-export default characterList;
+export default CharacterList;

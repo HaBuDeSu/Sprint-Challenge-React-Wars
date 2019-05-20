@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './StarWars.css';
 
-const character = () => {
-  <div>
-  </div>
+function Character() {
+  return (
+    <div>
+    </div>
+  )
 }
 
-export default character;
+export default Character;
