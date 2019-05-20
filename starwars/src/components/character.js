@@ -1,5 +1,4 @@
 import React from 'react';
-import './StarWars.css';
 
 function Character(props) {
   return (

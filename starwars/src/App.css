@@ -69,5 +69,13 @@ h1 {
 
 .list-container p {
   cursor: pointer;
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
+
+.list-container p.null {
+  color: grey;
+  cursor: default;
 }
 /* write your parent styles in here for your App.js */

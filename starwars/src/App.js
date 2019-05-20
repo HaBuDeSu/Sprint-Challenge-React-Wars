@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './components/StarWars.css';
 import CharacterList from './components/CharacterList';
 
 class App extends Component {
@@ -54,11 +55,11 @@ class App extends Component {
       <div className='App'>
         <h1 className='Header'>React Wars</h1>
         <div className='list-container'>
-          <p onClick={this.previous}>Previous</p>
+          <p onClick={this.previous} className={`${this.state.previous}`}>Previous</p>
           <CharacterList
             starwarsChars = {this.state.starwarsChars}
           />
-          <p onClick={this.next}>Next</p>
+          <p onClick={this.next} className={`${this.state.next}`}>Next</p>
         </div>
       </div>
     );

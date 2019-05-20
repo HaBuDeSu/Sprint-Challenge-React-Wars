@@ -16,9 +16,13 @@
   background-color: beige;
 }
 
-p {
+.character-box p {
   margin-top: 10px;
   margin-bottom: 10px;
+  cursor: default;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
 }
 
 .character-box .name {
