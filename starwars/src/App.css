@@ -64,5 +64,10 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  min-height: 650px;
+}
+
+.list-container p {
+  cursor: pointer;
 }
 /* write your parent styles in here for your App.js */

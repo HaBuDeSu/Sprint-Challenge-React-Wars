@@ -51,9 +51,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <div className="list-container">
+      <div className='App'>
+        <h1 className='Header'>React Wars</h1>
+        <div className='list-container'>
           <p onClick={this.previous}>Previous</p>
           <CharacterList
             starwarsChars = {this.state.starwarsChars}

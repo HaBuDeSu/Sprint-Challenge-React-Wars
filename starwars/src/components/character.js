@@ -3,14 +3,14 @@ import './StarWars.css';
 
 function Character(props) {
   return (
-    <div className='character-box'>
-      <p>Name: {props.name}</p>
+    <div className={`character-box ${props.gender}`}>
+      <p className='name'>{props.name}</p>
       {/*<p>Species: {props.species.name}</p>
       <p>Home World: {props.homeworld}</p>*/}
-      <p>Birth Year: {props.birth_year}</p>
-      <p>Gender: {props.gender}</p>
-      <p>Eye Color: {props.eye_color}</p>
-      <p>Hair Color: {props.hair_color}</p>
+      <p className='birth-year'>Birth Year: {props.birth_year}</p>
+      <p className='gender'>Gender: {props.gender}</p>
+      <p className='eye-color'>Eye Color: {props.eye_color}</p>
+      <p className='hair-color'>Hair Color: {props.hair_color}</p>
     </div>
   )
 }

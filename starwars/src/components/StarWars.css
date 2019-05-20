@@ -13,9 +13,23 @@
   border-style: solid;
   width: 25%;
   margin: 5px;
+  background-color: beige;
 }
 
 p {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.character-box .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.character-box.male {
+  background-color: dodgerblue;
+}
+
+.character-box.female {
+  background-color: pink;
 }
