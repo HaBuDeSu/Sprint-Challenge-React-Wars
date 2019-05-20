@@ -6,7 +6,7 @@ import Character from './Character';
 function CharacterList(props) {
   return (
     <div>
-      {props.starwarsChars.map(character => {
+      {props.starwarsChars.map(character => (
         <Character
           name = {character.name}
           species = {character.species[0]}
@@ -16,7 +16,7 @@ function CharacterList(props) {
           eye_color = {character.eye_color}
           hair_color = {character.hair_color}
         />
-      })}
+      ))}
     </div>
   )
 }
