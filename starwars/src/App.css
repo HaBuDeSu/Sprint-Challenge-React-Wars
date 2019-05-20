@@ -58,4 +58,11 @@ table {
 h1 {
   font-size: 2rem;
 }
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
 /* write your parent styles in here for your App.js */

@@ -6,7 +6,9 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      next: '',
+      previous: ''
     };
   }
 
@@ -24,20 +26,40 @@ class App extends Component {
       })
       .then(data => {
         console.log(data);
-        this.setState({ starwarsChars: data.results });
+        this.setState({
+          starwarsChars: data.results,
+          next: data.next,
+          previous: data.previous
+        });
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  next = () => {
+    if(this.state.next === null) {} else {
+    this.getCharacters(this.state.next)
+    }
+  }
+
+  previous = () => {
+    if(this.state.previous === null) {} else {
+    this.getCharacters(this.state.previous)
+    }
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <CharacterList
-          starwarsChars = {this.state.starwarsChars}
-        />
+        <div className="list-container">
+          <p onClick={this.previous}>Previous</p>
+          <CharacterList
+            starwarsChars = {this.state.starwarsChars}
+          />
+          <p onClick={this.next}>Next</p>
+        </div>
       </div>
     );
   }
