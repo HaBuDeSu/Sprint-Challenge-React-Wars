@@ -1,0 +1,11 @@
+.character-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.character-box {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
