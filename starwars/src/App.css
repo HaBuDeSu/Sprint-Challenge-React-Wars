@@ -77,5 +77,6 @@ h1 {
 .list-container p.null {
   color: grey;
   cursor: default;
+  text-decoration: none;
 }
 /* write your parent styles in here for your App.js */
